@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "products": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "productDescription": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "supplierName": {
+              "type": "string"
+            },
+            "aisles": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "path": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "path"
+                  ]
+                }
+              ]
+            },
+            "brand": {
+              "type": "string"
+            },
+            "supplierNames": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "productAttributes": {
+              "type": "object",
+              "properties": {
+                "msLine": {
+                  "type": "string"
+                },
+                "freezable": {
+                  "type": "string"
+                },
+                "vegetarian": {
+                  "type": "string"
+                },
+                "organic": {
+                  "type": "string"
+                },
+                "microwaveable": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "msLine",
+                "freezable",
+                "vegetarian",
+                "organic",
+                "microwaveable"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "productDescription",
+            "status",
+            "supplierName",
+            "aisles",
+            "brand",
+            "supplierNames",
+            "productAttributes"
+          ]
+        }
+      ]
+    },
+    "suppliers": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "required": [
+    "products",
+    "suppliers"
+  ]
+}

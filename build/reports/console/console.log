@@ -1,0 +1,306 @@
+[2023-09-21 15:40:39,101][INFO] [Thread - 1] [Logger] ENV_URL = https://game.nftpanda.space/
+[2023-09-21 15:40:39,120][INFO] [Thread - 1] [Logger] BROWSER = chrome
+[2023-09-21 15:40:39,121][INFO] [Thread - 1] [Logger] BROWSER_VERSION = 89
+[2023-09-21 15:40:39,121][INFO] [Thread - 1] [Logger] MAIN_USER = user
+[2023-09-21 15:40:39,121][INFO] [Thread - 1] [Logger] MAIN_USER_PASSWORD = agh-equ0DuDei6p
+[2023-09-21 15:40:39,122][INFO] [Thread - 1] [Logger] BASE_TIMEOUT = 30000
+[2023-09-21 15:40:39,122][INFO] [Thread - 1] [Logger] STEP_LOGGER_ENABLE = true
+[2023-09-21 15:40:39,314][INFO] ######################################################
+[2023-09-21 15:40:39,314][INFO] ######### START: 'Login test for Buyer role' #########
+[2023-09-21 15:40:39,325][INFO] ######################################################
+[2023-09-21 15:40:46,640][INFO] [Thread - 1] [STEP:] Open main website page	- [BROKEN]
+[2023-09-21 15:40:46,647][ERROR] org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.188 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CRVL4RA', ip: '192.168.0.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: https://user:agh-equ0DuDei6p@game.nftpanda.space/
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0055A813+48355]
+	(No symbol) [0x004EC4B1]
+	(No symbol) [0x003F5358]
+	(No symbol) [0x004161AC]
+	(No symbol) [0x00411EF3]
+	(No symbol) [0x00410579]
+	(No symbol) [0x00440C55]
+	(No symbol) [0x0044093C]
+	(No symbol) [0x0043A536]
+	(No symbol) [0x004182DC]
+	(No symbol) [0x004193DD]
+	GetHandleVerifier [0x007BAABD+2539405]
+	GetHandleVerifier [0x007FA78F+2800735]
+	GetHandleVerifier [0x007F456C+2775612]
+	GetHandleVerifier [0x005E51E0+616112]
+	(No symbol) [0x004F5F8C]
+	(No symbol) [0x004F2328]
+	(No symbol) [0x004F240B]
+	(No symbol) [0x004E4FF7]
+	BaseThreadInitThunk [0x775FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77837B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77837AEE+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:55)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:111)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:72)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:68)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:153)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:139)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:105)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:192)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:139)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:47)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:99)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:108)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:91)
+	at ui.common.UserActions.openMainPage(UserActions.java:14)
+	at ui.login.UserLoginTest.verifyWelcomeMessageForBuyer(UserLoginTest.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+[2023-09-21 15:40:46,648][INFO] #############################################################
+[2023-09-21 15:40:46,648][INFO] ######### TEST:'Login test for Buyer role' - FAILED #########
+[2023-09-21 15:40:46,649][INFO] #############################################################
+[2023-09-21 15:40:46,666][ERROR] java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:121)
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:87)
+	at com.codeborne.selenide.impl.StaticDriver.getWebDriver(StaticDriver.java:51)
+	at com.codeborne.selenide.SelenideDriver.getWebDriver(SelenideDriver.java:187)
+	at com.codeborne.selenide.SelenideDriver.title(SelenideDriver.java:235)
+	at com.codeborne.selenide.Selenide.title(Selenide.java:241)
+	at ui.listeners.TestListener.getAlert(TestListener.java:42)
+	at ui.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+[2023-09-21 15:40:46,666][INFO] #############################################################
+[2023-09-21 15:40:46,666][INFO] ######### TEST:'Login test for Buyer role' - FAILED #########
+[2023-09-21 15:40:46,666][INFO] #############################################################
+[2023-09-21 15:40:46,674][INFO] [Thread - 1] [BaseTest] SESSION_STORAGE/COOKIES has not been cleared!!!!!
+[2023-09-21 15:41:23,838][INFO] [Thread - 1] [Logger] ENV_URL = https://game.nftpanda.space/
+[2023-09-21 15:41:23,852][INFO] [Thread - 1] [Logger] BROWSER = chrome
+[2023-09-21 15:41:23,853][INFO] [Thread - 1] [Logger] BROWSER_VERSION = 116
+[2023-09-21 15:41:23,854][INFO] [Thread - 1] [Logger] MAIN_USER = user
+[2023-09-21 15:41:23,854][INFO] [Thread - 1] [Logger] MAIN_USER_PASSWORD = agh-equ0DuDei6p
+[2023-09-21 15:41:23,854][INFO] [Thread - 1] [Logger] BASE_TIMEOUT = 30000
+[2023-09-21 15:41:23,854][INFO] [Thread - 1] [Logger] STEP_LOGGER_ENABLE = true
+[2023-09-21 15:41:24,012][INFO] ######################################################
+[2023-09-21 15:41:24,013][INFO] ######### START: 'Login test for Buyer role' #########
+[2023-09-21 15:41:24,013][INFO] ######################################################
+[2023-09-21 15:41:27,128][INFO] [Thread - 1] [STEP:] Open main website page	- [BROKEN]
+[2023-09-21 15:41:27,136][ERROR] org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.188 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CRVL4RA', ip: '192.168.0.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: https://user:agh-equ0DuDei6p@game.nftpanda.space/
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0055A813+48355]
+	(No symbol) [0x004EC4B1]
+	(No symbol) [0x003F5358]
+	(No symbol) [0x004161AC]
+	(No symbol) [0x00411EF3]
+	(No symbol) [0x00410579]
+	(No symbol) [0x00440C55]
+	(No symbol) [0x0044093C]
+	(No symbol) [0x0043A536]
+	(No symbol) [0x004182DC]
+	(No symbol) [0x004193DD]
+	GetHandleVerifier [0x007BAABD+2539405]
+	GetHandleVerifier [0x007FA78F+2800735]
+	GetHandleVerifier [0x007F456C+2775612]
+	GetHandleVerifier [0x005E51E0+616112]
+	(No symbol) [0x004F5F8C]
+	(No symbol) [0x004F2328]
+	(No symbol) [0x004F240B]
+	(No symbol) [0x004E4FF7]
+	BaseThreadInitThunk [0x775FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77837B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77837AEE+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:55)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:111)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:72)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:68)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:153)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:139)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:105)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:192)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:139)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:47)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:99)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:108)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:91)
+	at ui.common.UserActions.openMainPage(UserActions.java:14)
+	at ui.login.UserLoginTest.verifyWelcomeMessageForBuyer(UserLoginTest.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+[2023-09-21 15:41:27,136][INFO] #############################################################
+[2023-09-21 15:41:27,136][INFO] ######### TEST:'Login test for Buyer role' - FAILED #########
+[2023-09-21 15:41:27,136][INFO] #############################################################
+[2023-09-21 15:41:27,157][ERROR] java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:121)
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:87)
+	at com.codeborne.selenide.impl.StaticDriver.getWebDriver(StaticDriver.java:51)
+	at com.codeborne.selenide.SelenideDriver.getWebDriver(SelenideDriver.java:187)
+	at com.codeborne.selenide.SelenideDriver.title(SelenideDriver.java:235)
+	at com.codeborne.selenide.Selenide.title(Selenide.java:241)
+	at ui.listeners.TestListener.getAlert(TestListener.java:42)
+	at ui.listeners.TestListener.onTestFailure(TestListener.java:31)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+[2023-09-21 15:41:27,157][INFO] #############################################################
+[2023-09-21 15:41:27,158][INFO] ######### TEST:'Login test for Buyer role' - FAILED #########
+[2023-09-21 15:41:27,158][INFO] #############################################################
+[2023-09-21 15:41:27,165][INFO] [Thread - 1] [BaseTest] SESSION_STORAGE/COOKIES has not been cleared!!!!!
